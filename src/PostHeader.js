@@ -7,13 +7,15 @@ class PostHeader extends Component {
          <Fragment>
             
             <div className="avatar">
-                <img src={logo} className="App-logo" alt="logo" />
+                <img src={logo} />
             </div>
+
             <div className="name">
                 <h2>{this.props.name}</h2>
             </div>
+            
             <div className="date">
-                há{this.props.date} min
+                há {this.props.date} min
             </div>
                 
         </Fragment>

@@ -1,24 +1,21 @@
 import React, { Component, Fragment} from 'react';
-import logo from './logo.png';
+import PostHeader from './PostHeader';
 
 class Post extends Component {
     render() {
         return (
          <Fragment>
-            <div className="postBox">
-                <div className="avatar">
-                    <img src={logo} className="App-logo" alt="logo" />
-                </div>
-                <div className="name">
-                    <h2>{this.props.name}</h2>
-                </div>
-                <div className="date">
-                    há{this.props.date} min
-                </div>
+            
+            <div className="postBox">      
+
+                <PostHeader name={this.props.data.name} date={this.props.data.date}/>
+                
                 <hr/>
+
                 <div className="text">
-                    {this.props.text}
+                    {this.props.data.description}
                 </div>
+
             </div>
         </Fragment>
         );
